@@ -62,7 +62,7 @@ router.post("/", function (req, res, next) {
 });
 
 function replyURL(text) {
-  const regex = /https:\/\/moptt\.tw\/p\/([^.]+).([^ ]+)/;
+  const regex = /https:\/\/moptt\.tw\/p\/([^.]+).([^ \n]+)/;
   const match = text.match(regex);
 
   if (match) {
